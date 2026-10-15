@@ -19,7 +19,7 @@
 
 # 🌟 二、一个 HTML 网页由什么组成？
 
-<img src="/Users/zy_w/Documents/typora images/02A7DD95-22B4-4FB9-B994-DDB5393F7F03.jpg" alt="img" style="zoom:50%;" />
+<img src="./assets/image-20261015165948978.png" alt="image-20261015165948978" style="zoom:50%;" />
 
 1. `<!DOCTYPE html>` 告诉浏览器：**我这是 HTML5 网页**。
 2. `<html>...</html>` 整个网页的根元素（所有内容都写在里面）。

@@ -4,13 +4,13 @@
 
 比如你写了一个web应用，并且本地调试没有任何问题，此时你想把这个应用发给你的朋友看看，或者部署到云服务器上，首先，你需要配置相同的软件（比如数据库，web服务器，必要的插件，库等等），而且还不能保证一定能运行起来，因为操作系统可能不一样（MacOS，Windows，Linux）
 
-<img src="/Users/zy_w/Documents/typora images/截屏2025-12-16 10.23.42.png" alt="截屏2025-12-16 10.23.42" style="zoom:30%;" />
+<img src="./assets/image-20261015165828350.png" alt="image-20261015165828350" style="zoom:50%;" />
 
 为了模拟完全相同的本地开发环境，我们自然会想到虚拟机，但是虚拟机太臃肿，占用太多内存与计算资源
 
 Docker与虚拟机在概念上类似，但轻量很多，Docker不会去模拟底层硬件，只会为每一个应用提供完全隔离的运行环境。这个环境被称为**Container**
 
-<img src="/Users/zy_w/Documents/typora images/截屏2025-12-16 10.26.51.png" alt="截屏2025-12-16 10.26.51" style="zoom:30%;" />
+<img src="./assets/image-20261015165845006.png" alt="image-20261015165845006" style="zoom:50%;" />
 
 ## 2. Docker的核心概念
 
@@ -25,4 +25,4 @@ Docker与虚拟机在概念上类似，但轻量很多，Docker不会去模拟�
   - 像是在虚拟机中安装操作系统和软件一样
 - **仓库（Registry）：**存储和分发镜像的平台，如 Docker Hub（官方公共仓库）或私有仓库（如 Harbor）。
 
-<img src="/Users/zy_w/Documents/typora images/截屏2025-12-16 10.36.18.png" alt="截屏2025-12-16 10.36.18" style="zoom:30%;" />
+<img src="./assets/image-20261015165859900.png" alt="image-20261015165859900" style="zoom:50%;" />

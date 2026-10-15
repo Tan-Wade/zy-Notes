@@ -28,7 +28,7 @@ RAG (Retrieval Augmented Generation)
 - 文档太长，拆分文档为chunks
 - 目的是将长文拆分成方便管理的短碎片，克服大模型吃不下长文的难题
 
-<img src="/Users/zy_w/Documents/typora images/image-20260416165657667.png" alt="image-20260416165657667" style="zoom:33%;" />
+<img src="./assets/image-20261015170027792.png" alt="image-20261015170027792" style="zoom:50%;" />
 
 ### （2）chunking -> Indexing
 
@@ -36,26 +36,26 @@ RAG (Retrieval Augmented Generation)
 
 - Embedding: 将文字用向量表示，向量数据库存储“向量+原始文本”的对照表
 
-  <img src="/Users/zy_w/Documents/typora images/image-20260417165055550.png" alt="image-20260417165055550" style="zoom:15%;" />
+  <img src="./assets/image-20261015170044244.png" alt="image-20261015170044244" style="zoom:50%;" />
 
-  <img src="/Users/zy_w/Documents/typora images/image-20260417165134459.png" alt="image-20260417165134459" style="zoom:25%;" />
+  <img src="./assets/image-20261015170059184.png" alt="image-20261015170059184" style="zoom:50%;" />
 
-<img src="/Users/zy_w/Documents/typora images/image-20260416165626724.png" alt="image-20260416165626724" style="zoom:20%;" />
+<img src="./assets/image-20261015170113270.png" alt="image-20261015170113270" style="zoom:50%;" />
 
 
 
 ## 1.2 回答生成阶段
 
-<img src="/Users/zy_w/Documents/typora images/image-20260417165532174.png" alt="image-20260417165532174" style="zoom:25%;" />
+<img src="./assets/image-20261015170125854.png" alt="image-20261015170125854" style="zoom:50%;" />
 
 用户提问问题，系统将用户的问题也送入Embedding 模型，翻译成一个带坐标的向量。将这个问题向量与向量数据库的向量做比较（计算相似度，并排序）
 
-<img src="/Users/zy_w/Documents/typora images/image-20260417165305100.png" alt="image-20260417165305100" style="zoom:20%;" />
+<img src="./assets/image-20261015170140491.png" alt="image-20261015170140491" style="zoom:50%;" />
 
 - 召回：系统选出相似度最高的 TOP-K个文本片段
 - 合成（增强和生成）：将这Top—K个片段和用户问题一起打包成上下文（context）
 
-<img src="/Users/zy_w/Documents/typora images/image-20260417165401923.png" alt="image-20260417165401923" style="zoom:50%;" />
+<img src="./assets/image-20261015170154719.png" alt="image-20261015170154719" style="zoom:30%;" />
 
 上图中：
 
@@ -72,13 +72,13 @@ RAG (Retrieval Augmented Generation)
 
 解决方案：专用的版面分析模型+OCR+人工复合反馈（RLHF）
 
-<img src="/Users/zy_w/Documents/typora images/image-20260417180115691.png" alt="image-20260417180115691" style="zoom:20%;" />
+<img src="./assets/image-20261015170345841.png" alt="image-20261015170345841" style="zoom:50%;" />
 
 
 
 ## 2.2 痛点：颗粒度（如何chunking）
 
-<img src="/Users/zy_w/Documents/typora images/image-20260417180534381.png" alt="image-20260417180534381" style="zoom:25%;" />
+<img src="./assets/image-20261015170355453.png" alt="image-20261015170355453" style="zoom:50%;" />
 
 - 切太大 = 噪音多
 - 切太小 = 语义丢失
@@ -90,7 +90,7 @@ RAG (Retrieval Augmented Generation)
 
 ## 2.3 痛点：检索准确率
 
-<img src="/Users/zy_w/Documents/typora images/image-20260417181346352.png" alt="image-20260417181346352" style="zoom:25%;" />
+<img src="./assets/image-20261015170409747.png" alt="image-20261015170409747" style="zoom:50%;" />
 
  检索准确率可以简单的理解为，向量数据库里选择了10个chunks和用户问题的相似度最高，但是实际上有用的只有6个
 
@@ -99,7 +99,7 @@ RAG (Retrieval Augmented Generation)
 
 ## 2.4 痛点：用户提问的模糊性
 
-<img src="/Users/zy_w/Documents/typora images/image-20260417181722903.png" alt="image-20260417181722903" style="zoom:50%;" />
+<img src="./assets/image-20261015170422725.png" alt="image-20261015170422725" style="zoom:50%;" />
 
 日常交流经常没头没尾，或者指代不明。需要Query Rewrite。
 
@@ -107,7 +107,7 @@ RAG (Retrieval Augmented Generation)
 
 # 3. 进阶方案与总结
 
-<img src="/Users/zy_w/Documents/typora images/image-20260417181914467.png" alt="image-20260417181914467" style="zoom:50%;" />
+<img src="./assets/image-20261015170434261.png" alt="image-20261015170434261" style="zoom:50%;" />
 
 - 逻辑推理能力：能更好的理解因果关系
 - 指令遵循能力：只根据资料回答，字数不超过50字
@@ -117,11 +117,11 @@ RAG (Retrieval Augmented Generation)
 
 ## 3.1 GraphRAG
 
-<img src="/Users/zy_w/Documents/typora images/image-20260417182153661.png" alt="image-20260417182153661" style="zoom:25%;" /> 
+<img src="./assets/image-20261015170447974.png" alt="image-20261015170447974" style="zoom:50%;" /> 
 
 ## 3.2 Agentic RAG
 
-<img src="/Users/zy_w/Documents/typora images/image-20260417182210918.png" alt="image-20260417182210918" style="zoom:25%;" />
+<img src="./assets/image-20261015170502400.png" alt="image-20261015170502400" style="zoom:50%;" />
 
 
 

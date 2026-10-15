@@ -22,7 +22,7 @@ uvicorn main:app --reload
 
 现在，打开浏览器并访问 **http://127.0.0.1:8000**，能看到 FastAPI 自动生成的交互式文档，并在根路径 ("/") 返回的 JSON 响应。
 
-<img src="/Users/zy_w/Documents/typora images/截屏2025-12-21 17.34.02.png" alt="截屏2025-12-21 17.34.02" style="zoom:20%;" />
+<img src="./assets/image-20261015165927955.png" alt="image-20261015165927955" style="zoom:50%;" />
 
 ### ✅  `FastAPI()` —— 创建应用实例
 

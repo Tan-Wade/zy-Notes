@@ -6,7 +6,7 @@
 
 # 界面简介
 
-<img src="/Users/zy_w/Documents/typora images/image-20260510125947972.png" alt="image-20260510125947972" style="zoom:50%;" />
+<img src="./assets/image-20260510125947972.png" alt="image-20260510125947972" style="zoom:50%;" />
 
 上图中分为几个界面
 
@@ -52,7 +52,7 @@
          2. 它显示的是 **从外层到内层** 的封装结构，而不是严格“自下而上”。
          3. 逻辑上是不停的拆封装，所以大体上是按照网络模型的顺序来拆
 
-         <img src="/Users/zy_w/Documents/typora images/image-20260510133104591.png" alt="image-20260510133104591" style="zoom:50%;" />
+         <img src="./assets/image-20260510133104591.png" alt="image-20260510133104591" style="zoom:50%;" />
 
 
 
@@ -72,7 +72,7 @@ Frame
 
 # Packet Details Pane（数据包详细信息）
 
-<img src="/Users/zy_w/Documents/typora images/image-20260510132434874.png" alt="image-20260510132434874" style="zoom:50%;" />
+<img src="./assets/image-20260510132434874.png" alt="image-20260510132434874" style="zoom:50%;" />
 
 - 第一行代表 layer 1 physical layer
 - 第二行代表layer 2 data link layer（协议是 Ethernet II）
@@ -81,7 +81,7 @@ Frame
 
 点开第一行
 
-<img src="/Users/zy_w/Documents/typora images/image-20260510133211842.png" alt="image-20260510133211842" style="zoom:50%;" />
+<img src="./assets/image-20260510133211842.png" alt="image-20260510133211842" style="zoom:50%;" />
 
 选中的一行展示了这个frame中存在的协议有哪些（注意顺序），可以对照上面两张图
 
@@ -89,7 +89,7 @@ Frame
 
 下图是实时抓的
 
-<img src="/Users/zy_w/Documents/typora images/image-20260510133558825.png" alt="image-20260510133558825" style="zoom:10%;" />   <img src="/Users/zy_w/Documents/typora images/image-20260510133450070.png" alt="image-20260510133450070" style="zoom:22%;" />  
+<img src="./assets/image-20260510133558825.png" alt="image-20260510133558825" style="zoom:10%;" />   <img src="./assets/image-20260510133450070.png" alt="image-20260510133450070" style="zoom:22%;" />  
 
 
 
